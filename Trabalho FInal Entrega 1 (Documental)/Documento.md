@@ -1,21 +1,21 @@
 # Trabalho final Entrega 1 - Loja de cartas
 
-UNIVERSIDADE FEDERAL DO CEARÁ
-INSTITUTO UNIVERSIDADE VIRTUAL
-Disciplina: SMD0052 - PROGRAMAÇÃO PARA WEB I (2026.2 - T01)
-Professor: LEONARDO OLIVEIRA MOREIRA
+UNIVERSIDADE FEDERAL DO CEARÁ                                 \
+INSTITUTO UNIVERSIDADE VIRTUAL                                \
+Disciplina: SMD0052 - PROGRAMAÇÃO PARA WEB I (2026.2 - T01)   \
+Professor: LEONARDO OLIVEIRA MOREIRA                          
 
-Equipe:
-ALIDJA DAFNY ALVES RODRIGUES - 556344
-EDUARDO LOPES FERNANDEZ FERNANDES - 565051
-FELIPE MOREIRA PONTES DA ROCHA - 564652
-GUILHERME ALVES TEIXEIRA DA SILVA - 568154
-HENRIQUE SEGUNDO DA FONSECA - 566118
-JOAO LUCAS NASCIMENTO SILVA - 566469
+#### Equipe:
+ALIDJA DAFNY ALVES RODRIGUES - 556344             \
+EDUARDO LOPES FERNANDEZ FERNANDES - 565051        \
+FELIPE MOREIRA PONTES DA ROCHA - 564652           \
+GUILHERME ALVES TEIXEIRA DA SILVA - 568154        \
+HENRIQUE SEGUNDO DA FONSECA - 566118              \
+JOAO LUCAS NASCIMENTO SILVA - 566469              
 
 Descrição geral do sistema: O sistema se trata de um e-commerce de cartas, expecificamente de YU GI OH, para a venda de cartas single (unitárias); o sistema se trata de uma atividade avaliativa para a disciplina de programação web do semestre 2026.2
 
-Tecnologias:
+### Tecnologias:
 | Camada             | Tecnologia                  | Função                                                          | Justificativa                                       |
 |--------------------|-----------------------------|-----------------------------------------------------------------|-----------------------------------------------------|
 | Linguagem          | Java 21 LTS                 | Linguagem de programação do backend                             | Versão LTS do Java já bem estabelecida.             |
@@ -28,8 +28,25 @@ Tecnologias:
 | Versionamento      | Git                         | Controle de versão local                                  | Registra o histórico de alterações e permite o trabalho em ramificações.|
 | Repositório remoto | GitHub                      | Hospedagem dorepositório e colaboração               | Centraliza o código do projeto e permite o compartilhamento entre os integrantes.|
 
-Arquitetura do projeto:
-![Arquitetura do projeto](../Arquitetura do projeto.png)
+### Arquitetura do projeto:
+![Arquitetura do projeto imagem]()
 
-Link do projeto no GitHub: https://github.com/Dudi06/projeto-final-prog-web
+### Imagens do projeto no Figma:
+Tela inicial
+![Tela inicial imagem]()
+Tela de login
+![Tela de login imagem]()
+Tela de cadastro
+![Tela de cadastro imagem]()
+Tela de carramento
+![Tela de carramento imagem]()
+Pop up de logout
+![Pop up de logout imagem]()
+Tela de produto
+![Tela de produto imagem]()
+Tela de carrinho de compras
+![Tela de carrinho de compras imagem]()
+
+#### Links importantes:
+Link do projeto no GitHub: https://github.com/Dudi06/projeto-final-prog-web                                             \
 Link das telas no Figma: https://www.figma.com/design/HwV6WgayKOvu9IENdVSxEu/yugioh?node-id=0-1&t=1DJSUEI8fjXQ7MCV-1
