@@ -29,23 +29,23 @@ Descrição geral do sistema: O sistema se trata de um e-commerce de cartas, exp
 | Repositório remoto | GitHub                      | Hospedagem dorepositório e colaboração               | Centraliza o código do projeto e permite o compartilhamento entre os integrantes.|
 
 ### Arquitetura do projeto:
-![Arquitetura do projeto imagem]()
+![Arquitetura do projeto imagem](Trabalho_Entrega_1\imagens\Arquitetura_projeto.png)
 
 ### Imagens do projeto no Figma:
 Tela inicial
-![Tela inicial imagem]()
+![Tela inicial imagem](Trabalho_Entrega_1\imagens\Pagina_Incial.png)
 Tela de login
-![Tela de login imagem]()
+![Tela de login imagem](Trabalho_Entrega_1\imagens\Pagina_login.png)
 Tela de cadastro
-![Tela de cadastro imagem]()
+![Tela de cadastro imagem](Trabalho_Entrega_1\imagens\Pagina_cadastro.png)
 Tela de carramento
-![Tela de carramento imagem]()
+![Tela de carramento imagem](Trabalho_Entrega_1\imagens\Pagina_carregamento_cadastro.png)
 Pop up de logout
-![Pop up de logout imagem]()
+![Pop up de logout imagem](Trabalho_Entrega_1\imagens\Pagina_Inicial_popup.png)
 Tela de produto
-![Tela de produto imagem]()
+![Tela de produto imagem](Trabalho_Entrega_1\imagens\Pagina_produto.png)
 Tela de carrinho de compras
-![Tela de carrinho de compras imagem]()
+![Tela de carrinho de compras imagem](Trabalho_Entrega_1\imagens\Pagina_carrinho.png)
 
 #### Links importantes:
 Link do projeto no GitHub: https://github.com/Dudi06/projeto-final-prog-web                                             \
