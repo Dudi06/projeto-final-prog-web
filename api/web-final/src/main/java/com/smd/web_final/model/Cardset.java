@@ -1,11 +1,25 @@
 package com.smd.web_final.model;
+import jakarta.persistence.*;
 
+@Entity
+@Table(name = "cardset")
 public class Cardset {
     
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false)
     private Integer id;
+
+    @Column(name = "set_name")
     private String set_name;
+    
+    @Column(name = "set_code")
     private String set_code;
+
+    @Column(name = "num_of_cards")
     private Integer num_of_cards;
+
+    @Column(name = "set_image")
     private String set_image;
 
     public Integer getId() {
