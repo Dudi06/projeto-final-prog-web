@@ -1,12 +1,21 @@
 package com.smd.web_final.model;
-
 import java.util.Currency;
+import jakarta.persistence.*;
 
+@Entity
+@Table(name = "venda_card")
 public class Venda_card {
     
+    @Column(name = "card_id", nullable = false)
     private Integer card_id;
+    
+    @Column(name = "venda_id", nullable = false)
     private Integer venda_id;
+
+    @Column(name = "preco")
     private Currency preco;
+
+    @Column(name = "quantidade")
     private String quantidade;
 
     public Integer getCard_id() {
