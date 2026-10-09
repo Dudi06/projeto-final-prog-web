@@ -1,20 +1,47 @@
 package com.smd.web_final.model;
-
 import java.util.Currency;
+import jakarta.persistence.*;
 
+@Entity
+@Table(name = "card")
 public class Card {
  
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false)
     private Integer id;
+    
+    @Column(name = "nome")
     private String nome;
+
+    @Column(name = "type")
     private String type;
+
+    @Column(name = "humanReadableCardType")
     private String humanReadableCardType;
+
+    @Column(name = "frameType")
     private String frameType;
+
+    @Column(name = "desc")
     private String desc;
+
+    @Column(name = "ygoprodeck_url")
     private String ygoprodeck_url;
+
+    @Column(name = "cardmarket_price")
     private Currency cardmarket_price;
+    
+    @Column(name = "tcgplayer_price")
     private Currency tcgplayer_price;
+    
+    @Column(name = "ebay_price")
     private Currency ebay_price;
+    
+    @Column(name = "amazon_price")
     private Currency amazon_price;
+    
+    @Column(name = "coolstuffinc_price")
     private Currency coolstuffinc_price;
 
     public Integer getId() {
