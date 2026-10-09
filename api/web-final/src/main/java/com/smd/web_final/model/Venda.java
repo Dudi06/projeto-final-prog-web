@@ -1,9 +1,19 @@
 package com.smd.web_final.model;
+import jakarta.persistence.*;
 
+@Entity
+@Table(name = "venda")
 public class Venda {
     
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false)
     private Integer id;
+
+    @Column(name = "data_hora")
     private String data_hora;
+
+    @Column(name = "usuario_id")
     private Integer usuario_id;
 
     public Integer getId() {
