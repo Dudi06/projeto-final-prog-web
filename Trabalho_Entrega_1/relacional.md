@@ -28,7 +28,7 @@
 |---            |---             |---  |---       |
 |card_id(PK)(FK)|venda_id(PK)(FK)|preco|quantidade|
 
-| card_cardset   |                  |        |        |          |               |         |
+| card_cardset  |                  |        |        |          |               |         |
 |---            |---               |---     |---     |---       |---            |---      |  
 |card_id(PK)(FK)|cardset_id(PK)(FK)|set_name|set_code|set_rarity|set_rarity_code|set_price|
 
