@@ -1,12 +1,28 @@
 package com.smd.web_final.model;
+import jakarta.persistence.*;
 
-public class Monsntro {
+@Entity
+@Table(name = "monstro")
+public class Monstro {
     
+    @Column(name = "card_id", nullable = false)
     private Integer card_id;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false)
     private Integer id;
+
+    @Column(name = "atk")
     private Integer atk;
+
+    @Column(name = "def")
     private Integer def;
+
+    @Column(name = "level")
     private Integer level;
+
+    @Column(name = "attribute_character")
     private String attribute_character;
 
     public Integer getCard_id() {
