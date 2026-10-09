@@ -1,15 +1,30 @@
 package com.smd.web_final.model;
-
 import java.util.Currency;
+import jakarta.persistence.*;
 
+@Entity
+@Table(name = "card_cardset")
 public class Card_cardset {
     
+    @Column(name = "card_id", nullable = false)
     private Integer card_id;
+
+    @Column(name = "cardset_id", nullable = false)
     private Integer cardset_id;
+
+    @Column(name = "set_name")
     private String set_name;
+
+    @Column(name = "set_code")
     private String set_code;
+
+    @Column(name = "set_rarity")
     private String set_rarity;
+
+    @Column(name = "set_rarity_code")
     private String set_rarity_code;
+
+    @Column(name = "set_price")
     private Currency set_price;
 
     public Integer getCard_id() {
