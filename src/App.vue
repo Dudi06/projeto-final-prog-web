@@ -9,8 +9,8 @@
 
 <script>
 
-import Header from './components/header.vue'
-import Footer from './components/footer.vue'
+import Header from './components/AppHeader.vue'
+import Footer from './components/AppFooter.vue'
 import tempNav from './components/tempNav.vue'
 
 export default {
@@ -23,7 +23,6 @@ export default {
 }
 
 </script>
-
 <style>
 
 </style>

@@ -8,8 +8,8 @@
 
 <script>
 
-import Header from "@/components/header.vue"
-import Footer from "@/components/footer.vue"
+import Header from "@/components/AppHeader"
+import Footer from "@/components/AppFooter.vue"
 
 export default {
   name: "telaCarrinho",

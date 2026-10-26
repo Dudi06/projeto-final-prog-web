@@ -12,13 +12,7 @@
 </template>
 
 <script>            
-import router from '@/router';
-
 export default {
-  name: 'tempNav',
-  components: {
-    router
-  }
+  name: 'tempNav'
 }
-
-</script>   
+</script>
