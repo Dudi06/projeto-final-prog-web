@@ -1,4 +1,5 @@
 package com.smd.web_final.model;
+import java.util.Currency;
 import jakarta.persistence.*;
 
 @Entity
@@ -24,7 +25,7 @@ public class Card_cardset {
     private String set_rarity_code;
 
     @Column(name = "set_price")
-    private Money set_price;
+    private Currency set_price;
 
     public Integer getCard_id() {
         return card_id;
@@ -74,11 +75,11 @@ public class Card_cardset {
         this.set_rarity_code = set_rarity_code;
     }
 
-    public Money getSet_price() {
+    public Currency getSet_price() {
         return set_price;
     }
 
-    public void setSet_price(Money set_price) {
+    public void setSet_price(Currency set_price) {
         this.set_price = set_price;
     }
     
