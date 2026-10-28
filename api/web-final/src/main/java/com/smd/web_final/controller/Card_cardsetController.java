@@ -10,7 +10,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/card-cardsets")
-@CrossOrigin(origins = "*")
 public class Card_cardsetController {
 
     @Autowired
