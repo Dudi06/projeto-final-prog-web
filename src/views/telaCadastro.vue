@@ -6,15 +6,9 @@
 
 <script>
 
-import Header from "@/components/AppHeader"
-import Footer from "@/components/AppFooter.vue"
 
 export default {
-  name: "telaCadastro",
-  components: {
-    Header,
-    Footer
-  }
+  name: "telaCadastro"
 }
 
 </script>
