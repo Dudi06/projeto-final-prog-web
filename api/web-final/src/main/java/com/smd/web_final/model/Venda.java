@@ -1,5 +1,6 @@
 package com.smd.web_final.model;
 import jakarta.persistence.*;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "venda")
@@ -11,7 +12,7 @@ public class Venda {
     private Integer id;
 
     @Column(name = "data_hora")
-    private String data_hora;
+    private LocalDateTime data_hora;
 
     @Column(name = "usuario_id")
     private Integer usuario_id;
@@ -24,11 +25,11 @@ public class Venda {
         this.id = id;
     }
 
-    public String getData_hora() {
+    public LocalDateTime getData_hora() {
         return data_hora;
     }
 
-    public void setData_hora(String data_hora) {
+    public void setData_hora(LocalDateTime data_hora) {
         this.data_hora = data_hora;
     }
 
