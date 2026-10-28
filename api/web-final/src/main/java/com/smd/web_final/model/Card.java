@@ -1,5 +1,4 @@
 package com.smd.web_final.model;
-import java.util.Currency;
 import jakarta.persistence.*;
 
 @Entity
@@ -30,19 +29,19 @@ public class Card {
     private String ygoprodeck_url;
 
     @Column(name = "cardmarket_price")
-    private Currency cardmarket_price;
+    private Money cardmarket_price;
     
     @Column(name = "tcgplayer_price")
-    private Currency tcgplayer_price;
+    private Money tcgplayer_price;
     
     @Column(name = "ebay_price")
-    private Currency ebay_price;
+    private Money ebay_price;
     
     @Column(name = "amazon_price")
-    private Currency amazon_price;
+    private Money amazon_price;
     
     @Column(name = "coolstuffinc_price")
-    private Currency coolstuffinc_price;
+    private Money coolstuffinc_price;
 
     public Integer getId() {
         return id;
@@ -100,43 +99,43 @@ public class Card {
         this.ygoprodeck_url = ygoprodeck_url;
     }
 
-    public Currency getCardmarket_price() {
+    public Money getCardmarket_price() {
         return cardmarket_price;
     }
 
-    public void setCardmarket_price(Currency cardmarket_price) {
+    public void setCardmarket_price(Money cardmarket_price) {
         this.cardmarket_price = cardmarket_price;
     }
 
-    public Currency getTcgplayer_price() {
+    public Money getTcgplayer_price() {
         return tcgplayer_price;
     }
 
-    public void setTcgplayer_price(Currency tcgplayer_price) {
+    public void setTcgplayer_price(Money tcgplayer_price) {
         this.tcgplayer_price = tcgplayer_price;
     }
 
-    public Currency getEbay_price() {
+    public Money getEbay_price() {
         return ebay_price;
     }
 
-    public void setEbay_price(Currency ebay_price) {
+    public void setEbay_price(Money ebay_price) {
         this.ebay_price = ebay_price;
     }
 
-    public Currency getAmazon_price() {
+    public Money getAmazon_price() {
         return amazon_price;
     }
 
-    public void setAmazon_price(Currency amazon_price) {
+    public void setAmazon_price(Money amazon_price) {
         this.amazon_price = amazon_price;
     }
 
-    public Currency getCoolstuffinc_price() {
+    public Money getCoolstuffinc_price() {
         return coolstuffinc_price;
     }
 
-    public void setCoolstuffinc_price(Currency coolstuffinc_price) {
+    public void setCoolstuffinc_price(Money coolstuffinc_price) {
         this.coolstuffinc_price = coolstuffinc_price;
     }
 }

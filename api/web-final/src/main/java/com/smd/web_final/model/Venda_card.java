@@ -1,5 +1,4 @@
 package com.smd.web_final.model;
-import java.util.Currency;
 import jakarta.persistence.*;
 
 @Entity
@@ -13,7 +12,7 @@ public class Venda_card {
     private Integer venda_id;
 
     @Column(name = "preco")
-    private Currency preco;
+    private Money preco;
 
     @Column(name = "quantidade")
     private String quantidade;
@@ -34,11 +33,11 @@ public class Venda_card {
         this.venda_id = venda_id;
     }
 
-    public Currency getPreco() {
+    public Money getPreco() {
         return preco;
     }
 
-    public void setPreco(Currency preco) {
+    public void setPreco(Money preco) {
         this.preco = preco;
     }
 
