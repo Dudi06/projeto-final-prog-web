@@ -1,8 +1,6 @@
 <template>
   <div>
-        <Header />
         <p> Tela Login </p>
-        <Footer />
   </div>
 </template>
 

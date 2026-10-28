@@ -1,8 +1,6 @@
 <template>
   <div>
-        <Header />
         <p> Tela Cadastro </p>
-        <Footer />
   </div>
 </template>
 

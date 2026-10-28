@@ -1,8 +1,6 @@
 <template>
   <div>
-        <Header />
         <p> Tela Principal </p>
-        <Footer />
   </div>
 </template>
 

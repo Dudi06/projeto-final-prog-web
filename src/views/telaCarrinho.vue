@@ -1,8 +1,6 @@
 <template>
   <div>
-        <Header />
         <p> Tela Carrinho </p>
-        <Footer />
   </div>
 </template>
 

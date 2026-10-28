@@ -1,8 +1,6 @@
 <template>
   <div>
-        <Header />
         <p> Tela Usuario </p>
-        <Footer />
   </div>
 </template>
 
