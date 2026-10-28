@@ -29,19 +29,19 @@
             
             <router-link to="" aria-label="Instagramlink">
               <img src="" alt="Instagram" />
-            </ router-link>
+            </router-link>
 
             <router-link to="" aria-label="YouTubelink">
               <img src="" alt="YouTube" />
-            </ router-link>
+            </router-link>
 
             <router-link to="" aria-label="Facebooklink">
               <img src="" alt="Facebook" />
-            </ router-link>
+            </router-link>
 
             <router-link to="" aria-label="TikToklink">
               <img src="" alt="TikTok" />
-            </ router-link>
+            </router-link>
 
           </div>
         </section>
