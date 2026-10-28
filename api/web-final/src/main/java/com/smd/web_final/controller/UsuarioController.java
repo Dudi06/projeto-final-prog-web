@@ -42,9 +42,18 @@ public class UsuarioController {
 
     @PutMapping("/{id}")
     public ResponseEntity<Usuario> atualizar(@PathVariable Integer id, @RequestBody Usuario usuario) {
-        if (!usuarioRepository.existsById(id)) return ResponseEntity.notFound().build();
-        usuario.setId(id);
-        return ResponseEntity.ok(usuarioRepository.save(usuario));
+        return usuarioRepository.findById(id)
+                .map(existente -> {
+                    // Campos que o cliente DEVE poder alterar, deixa administrador de fora
+                    if (usuario.getNome()     != null) existente.setNome(usuario.getNome());
+                    if (usuario.getEmail()    != null) existente.setEmail(usuario.getEmail());
+                    if (usuario.getEndereco() != null) existente.setEndereco(usuario.getEndereco());
+                    if (usuario.getLogin()    != null) existente.setLogin(usuario.getLogin());
+                    if (usuario.getSenha()    != null) existente.setSenha(usuario.getSenha());
+
+                    return ResponseEntity.ok(usuarioRepository.save(existente));
+                })
+                .orElse(ResponseEntity.notFound().build());
     }
 
     @DeleteMapping("/{id}")
