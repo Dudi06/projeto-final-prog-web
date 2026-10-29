@@ -1,18 +1,70 @@
 <template>
   <div id="nav">
-      <p> Navegação temporaria do site </p>
-      <router-link to="/"> Tela Principal</router-link> |
-      <router-link to="/login"> Tela Login</router-link> |
-      <router-link to="/cadastro">Tela Cadastro</router-link> |
-      <router-link to="/produto"> Tela Produto</router-link> |
-      <router-link to="/carrinho"> Tela Carrinho</router-link> |
-      <router-link to="/usuario"> Tela Usuario</router-link> |
-      <router-link to="/administrador"> Tela Administrador</router-link> 
+    <p>Navegação temporária do site</p>
+         <AppButton
+        label="Tela Principal"
+        @click="$router.push('/')"
+      /> |
+         <AppButton
+        label="Tela Produto"
+        @click="$router.push('/produto')"
+      />|
+      <AppButton
+        label="Tela Carrinho"
+        @click="$router.push('/carrinho')"
+      /> |
+
+    <template v-if="logado">
+      <router-link to="/usuario">Minha Conta</router-link>
+      <template v-if="admin">
+        | <router-link to="/administrador">Admin</router-link>
+      </template>
+      | <a href="#" @click.prevent="sair">Sair ({{ nome }})</a>
+    </template>
+    <template v-else>
+      <AppButton
+        label="Tela Login"
+        @click="$router.push('/login')"
+      />|
+      <AppButton
+        label="Tela Cadastro"
+        @click="$router.push('/cadastro')"
+      />
+    </template>
   </div>
 </template>
 
-<script>            
+<script>
+import { getAuth, isAdmin, logout } from '@/services/auth'
+import AppButton from '@/components/AppButton.vue'
+
 export default {
-  name: 'tempNav'
+  name: 'tempNav',
+
+  components: {
+    AppButton
+  },
+  data() {
+    return { logado: false, admin: false, nome: '' }
+  },
+  created() {
+    this.refresh()
+  },
+  watch: {
+    $route() { this.refresh() }
+  },
+  methods: {
+    refresh() {
+      const u = getAuth()
+      this.logado = !!u
+      this.admin = isAdmin()
+      this.nome = u ? u.nome : ''
+    },
+    sair() {
+      logout()
+      this.refresh()
+      this.$router.push({ name: 'login' })
+    }
+  }
 }
 </script>
