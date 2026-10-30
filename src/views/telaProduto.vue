@@ -1,22 +1,11 @@
 <template>
-  <div>
-        <Header />
-        <p> Tela Produto</p>
-        <Footer />
+  <div class="tela-produto">
+    <p>Tela Produto</p>
   </div>
 </template>
 
 <script>
-
-import Header from "@/components/AppHeader"
-import Footer from "@/components/AppFooter.vue"
-
 export default {
-  name: "telaProduto",
-  components: {
-    Header,
-    Footer
-  }
+  name: "telaProduto"
 }
-
 </script>
