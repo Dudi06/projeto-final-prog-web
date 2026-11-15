@@ -2,7 +2,7 @@
   <div class="tela-usuario">
     <h1>Minha Conta</h1>
 
-    <p v-if="usuario">Você não está logado.</p>
+    <p v-if="!usuario">Você não está logado.</p>
 
     <template v-else>
       <!-- Mensagens -->

@@ -1,5 +1,5 @@
 package com.smd.web_final.model;
-import java.util.Currency;
+import java.math.BigDecimal;
 import jakarta.persistence.*;
 
 @Entity
@@ -17,32 +17,35 @@ public class Card {
     @Column(name = "type")
     private String type;
 
-    @Column(name = "humanReadableCardType")
+    @Column(name = "\"humanReadableCardType\"")
     private String humanReadableCardType;
 
-    @Column(name = "frameType")
+    @Column(name = "\"frameType\"")
     private String frameType;
 
-    @Column(name = "desc")
+    @Column(name = "\"desc\"")
     private String desc;
+
+    @Column(name = "race")
+    private String race;
 
     @Column(name = "ygoprodeck_url")
     private String ygoprodeck_url;
 
     @Column(name = "cardmarket_price")
-    private Currency cardmarket_price;
+    private BigDecimal cardmarket_price;
     
     @Column(name = "tcgplayer_price")
-    private Currency tcgplayer_price;
+    private BigDecimal tcgplayer_price;
     
     @Column(name = "ebay_price")
-    private Currency ebay_price;
+    private BigDecimal ebay_price;
     
     @Column(name = "amazon_price")
-    private Currency amazon_price;
+    private BigDecimal amazon_price;
     
     @Column(name = "coolstuffinc_price")
-    private Currency coolstuffinc_price;
+    private BigDecimal coolstuffinc_price;
 
     public Integer getId() {
         return id;
@@ -92,6 +95,10 @@ public class Card {
         this.desc = desc;
     }
 
+    public String getRace() { return race; }
+
+    public void setRace(String race) { this.race = race; }
+
     public String getYgoprodeck_url() {
         return ygoprodeck_url;
     }
@@ -100,43 +107,43 @@ public class Card {
         this.ygoprodeck_url = ygoprodeck_url;
     }
 
-    public Currency getCardmarket_price() {
+    public BigDecimal getCardmarket_price() {
         return cardmarket_price;
     }
 
-    public void setCardmarket_price(Currency cardmarket_price) {
+    public void setCardmarket_price(BigDecimal cardmarket_price) {
         this.cardmarket_price = cardmarket_price;
     }
 
-    public Currency getTcgplayer_price() {
+    public BigDecimal getTcgplayer_price() {
         return tcgplayer_price;
     }
 
-    public void setTcgplayer_price(Currency tcgplayer_price) {
+    public void setTcgplayer_price(BigDecimal tcgplayer_price) {
         this.tcgplayer_price = tcgplayer_price;
     }
 
-    public Currency getEbay_price() {
+    public BigDecimal getEbay_price() {
         return ebay_price;
     }
 
-    public void setEbay_price(Currency ebay_price) {
+    public void setEbay_price(BigDecimal ebay_price) {
         this.ebay_price = ebay_price;
     }
 
-    public Currency getAmazon_price() {
+    public BigDecimal getAmazon_price() {
         return amazon_price;
     }
 
-    public void setAmazon_price(Currency amazon_price) {
+    public void setAmazon_price(BigDecimal amazon_price) {
         this.amazon_price = amazon_price;
     }
 
-    public Currency getCoolstuffinc_price() {
+    public BigDecimal getCoolstuffinc_price() {
         return coolstuffinc_price;
     }
 
-    public void setCoolstuffinc_price(Currency coolstuffinc_price) {
+    public void setCoolstuffinc_price(BigDecimal coolstuffinc_price) {
         this.coolstuffinc_price = coolstuffinc_price;
     }
 }

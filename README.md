@@ -1,14 +1,31 @@
 # projeto-final-prog-web
 
+
+## :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+##                      PARA O PROFESSOR LEONARDO
+
 ## Project setup
 ```
 npm install
 ```
+## Setup SpringBoot
 
-### Compiles and hot-reloads for development
+Navigate to the `api/web_final` folder and run Spring Boot:
+
+```bash
+cd api/web_final
+./mvnw spring-boot:run
 ```
+
+## Setup Vue.js
+
+Open another terminal and run Vue.js:
+```bash
 npm run serve
 ```
+
+## :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ### Compiles and minifies for production
 ```
